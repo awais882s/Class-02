@@ -1,4 +1,4 @@
-import Button from "./Components/Button";
+import Counter1 from "./Components/Counter1"
 
 function App() {
   const sampleData = {
@@ -12,12 +12,17 @@ function App() {
 
   return (
     <div className="App">
-      <Button data={sampleData}></Button>
-      <Button data1={sampleData1}></Button>
-      <Button data1={sampleData2}></Button>
-      <Button data1={sampleData3}></Button>
+      <Counter1
+        sampleData={sampleData}
+        sampleData1={sampleData1}
+        sampleData2={sampleData2}
+        sampleData3={sampleData3}
+      ></Counter1>
     </div>
   );
 }
 
 export default App;
+
+// props
+// if we want to pass data from parent to child components we need to use props
