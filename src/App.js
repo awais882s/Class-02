@@ -1,4 +1,5 @@
-import Counter1 from "./Components/Counter1"
+// import Counter1 from "./Components/Counter1"
+import Counter from "./Components/Counter";
 
 function App() {
   const sampleData = {
@@ -12,12 +13,13 @@ function App() {
 
   return (
     <div className="App">
-      <Counter1
+      {/* <Counter1
         sampleData={sampleData}
         sampleData1={sampleData1}
         sampleData2={sampleData2}
         sampleData3={sampleData3}
-      ></Counter1>
+      ></Counter1> */}
+      <Counter></Counter>
     </div>
   );
 }
