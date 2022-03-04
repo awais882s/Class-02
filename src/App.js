@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from "./Components/Button";
 
 function App() {
+  const sampleData = {
+    color: "red",
+    title: "Learn ReactJs",
+    width: "50",
+  };
+  const sampleData1 = ["1", "2", "3", "4", "5"];
+  const sampleData2 = "Sample String";
+  const sampleData3 = 10;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button data={sampleData}></Button>
+      <Button data1={sampleData1}></Button>
+      <Button data1={sampleData2}></Button>
+      <Button data1={sampleData3}></Button>
     </div>
   );
 }
