@@ -13,6 +13,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>This is class2</h1>
       {/* <Counter1
         sampleData={sampleData}
         sampleData1={sampleData1}
